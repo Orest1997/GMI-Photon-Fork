@@ -1,0 +1,112 @@
+.createToken {
+  .main {
+    background: radial-gradient(
+      46.79% 55.48% at 49.58% 0%,
+      rgba(177, 137, 255, 0.33) 0%,
+      rgba(129, 68, 246, 0.13) 100%
+    );
+    border: 1px solid #2b0e42;
+    backdrop-filter: blur(40px);
+
+    button {
+      background: linear-gradient(
+        136.62deg,
+        #01f9e6 13.75%,
+        #00ede9 29.34%,
+        #00cef2 47.47%,
+        #00a2ff 70.67%,
+        #0d99ff 86.26%
+      );
+      backdrop-filter: blur(86.41922760009766px);
+      border: 1.44px solid #2b0e42;
+      font-size: 23px;
+      font-weight: 500;
+      width: 100%;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+  }
+
+  /* .background {
+    background: url(/assets/images/createtoken.png);
+    background-size: cover;
+  } */
+
+  .title {
+    width: 302px;
+    height: 302px;
+    border-radius: 9999px;
+    background: url(/assets/images/createbutton.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .pairTable {
+    .header {
+      font-weight: 700;
+      color: #82858f;
+    }
+
+    .row {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 0 1.5fr 1fr 1fr 1fr 1fr 1fr 1fr 70px;
+      align-items: center;
+      padding: 8px;
+    }
+
+    .body {
+      .row {
+        cursor: pointer;
+
+        &:hover {
+          background-color: #d9d9d91a;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1440px) {
+    .pairTable {
+      .row {
+        grid-template-columns: 0 1.5fr 1fr 1fr 1fr 1fr 1fr 70px;
+
+        > div:nth-child(5) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .pairTable {
+      .row {
+        grid-template-columns: 0 1.5fr 1fr 1fr 1fr 70px;
+
+        > div:nth-child(5),
+        > div:nth-child(7),
+        > div:nth-child(8) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .pairTable {
+      .row {
+        grid-template-columns: 0 1.5fr 1fr 1fr 70px;
+
+        > div:nth-child(5),
+        > div:nth-child(6),
+        > div:nth-child(7),
+        > div:nth-child(8) {
+          display: none;
+        }
+      }
+    }
+  }
+}

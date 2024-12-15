@@ -1,0 +1,105 @@
+.home__page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding-bottom: 48px;
+
+  .wallet-icon {
+    background: linear-gradient(
+      147.75deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.05) 100%
+    );
+    backdrop-filter: blur(10px);
+    border-radius: 100%;
+    width: 134px;
+    height: 134px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > img {
+      width: 74px;
+      height: 74px;
+    }
+  }
+
+  .container {
+    width: 100vw;
+    height: calc(100vh - 200px);
+    background-image: url(./assets/images/dash_pic1.png); /* Replace with your image URL */
+    background-size: contain; /* Ensures the image covers the entire container */
+    background-position: right; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+  }
+
+  .gradient_text {
+    background: linear-gradient(
+      136.62deg,
+      #01f9e6 13.75%,
+      #00ede9 29.34%,
+      #00cef2 47.47%,
+      #00a2ff 70.67%,
+      #0d99ff 86.26%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .person_card {
+    background: radial-gradient(
+      46.79% 55.48% at 49.58% 0%,
+      rgba(177, 137, 255, 0.33) 0%,
+      rgba(129, 68, 246, 0.13) 100%
+    );
+  }
+
+  .step_card {
+    background: radial-gradient(
+      35.55% 100% at 49.58% 0%,
+      rgba(177, 137, 255, 0.33) 0%,
+      rgba(129, 68, 246, 0.13) 100%
+    );
+
+    border: solid 0.5px #b189ff54;
+    box-shadow: 0px 0px 6.39px 0px #dbc9ff78 inset;
+  }
+
+  > .background {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    .desktop-bg {
+      position: absolute;
+      width: 446px;
+      height: 446px;
+      left: 50%;
+      top: 511px;
+      border-radius: 100%;
+
+      background: #31f79b;
+      box-shadow: 0px 0px 250px #31f79b;
+    }
+  }
+}
+
+@media only screen and (max-width: 1204px) {
+  .home__page {
+    .logo {
+      top: 108px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .home__page {
+    > .background {
+      display: none;
+    }
+  }
+}

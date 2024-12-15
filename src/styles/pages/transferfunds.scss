@@ -1,0 +1,21 @@
+.depositTable {
+  .row {
+    width: 100%;
+    display: grid;
+    grid-template-columns:
+      minmax(90px, 0.4fr) minmax(90px, 0.6fr) minmax(114px, 0.6fr)
+      minmax(126px, 0.6fr) 58px;
+    align-items: center;
+  }
+}
+
+.withdrawTable {
+  .row {
+    width: 100%;
+    display: grid;
+    grid-template-columns:
+      minmax(90px, 0.4fr) minmax(90px, 0.6fr) minmax(114px, 0.6fr)
+      minmax(126px, 0.6fr) minmax(100px, 0.6fr) 58px;
+    align-items: center;
+  }
+}
